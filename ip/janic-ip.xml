@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- <?xml-stylesheet type="text/xsl" href="https://www.thejanic.com/styles/janic-style-1.xsl"?> -->
+
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    
+    xmlns:jip="https://www.thejanic.com/ip/janic-ip.xml#"
+    xmlns:jnc="https://www.thejanic.com/agents/janic-agents.xml#"
+    xmlns:jw3="https://www.thejanic.com/"
+    >
+    
+    <!-- DOCUMENT METADATA -->
+    <rdf:Description 
+        rdf:about="jip:"
+        >
+        <!-- Document Relationship -->
+        <dcterms:isPartOf rdf:resource="jnc:janic"/>
+        
+        <!-- Document File Type -->
+        <rdf:type rdf:resource="dcterms:IMT">application/rdf+xml</rdf:type>
+        
+        <!-- Document Identifier -->
+        <dcterms:identifier>janic-ip-v2.0</dcterms:identifier>
+        
+        <!-- Document Language -->
+        <dcterms:language>en</dcterms:language>
+        
+        <!-- Document Title -->
+        <dcterms:title xml:lang="en-US">
+            Central Copyright and Licensing Information for "The JaNic" Organization
+        </dcterms:title>
+        <dcterms:title xml:lang="en-CA">
+            Central Copyright and Licensing Information for "The JaNic" Organisation
+        </dcterms:title>
+        <dcterms:title xml:lang="de">
+            Zentrale Urheberrechts- und Lizenzinformationen für die Organisation „The JaNic“
+        </dcterms:title>
+        <dcterms:title xml:lang="fr">
+            Informations Centrales sur les Droits d'Auteur et les Licences pour l'Organisation « The JaNic »
+        </dcterms:title>
+        <dcterms:title xml:lang="es">
+            Información central sobre derechos de autor y licencias para la organización "The JaNic"
+        </dcterms:title>
+        
+        <!-- Document Description -->
+        <dcterms:description xml:lang="en-US">
+            This document is an online XML file that conforms to the <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework</a> (RDF) standard and serves as a central repository of copyright and licensing information for the intellectual property of "The JaNic" organization.
+        </dcterms:description>
+        <dcterms:description xml:lang="de">
+            Dieses Dokument ist eine über das Internet erreichbare XML-Datei mit Daten im Standard des <a href="https://de.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Frameworks</a> (RDF) und dient als zentraler Speicher für Urheberrechts- und Lizenzinformationen für das geistige Eigentum der Organisation „The JaNic“.
+        </dcterms:description>
+        <dcterms:description xml:lang="fr">
+            Ce document est un fichier XML en ligne conforme à la norme <a href="https://fr.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework</a> (RDF) et sert de référentiel central des droits d'auteur et des informations sur les licences pour la propriété intellectuelle de l'organisation « The JaNic ».
+        </dcterms:description>
+        <dcterms:description xml:lang="es">
+            Este documento es un archivo XML en línea que cumple con el estándar <a href="https://es.wikipedia.org/wiki/Resource_Description_Framework">Marco de descripción de recursos</a> (RDF) y sirve como depósito central de derechos de autor e información sobre licencias de propiedad intelectual de la organización "The JaNic".
+        </dcterms:description>
+        
+        <!-- Document Remarks -->
+        <rdfs:comment xml:lang="en">
+            This is a machine-readable XML document containing RDF data.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="de">
+            Dieses Dokument ist eine maschinenlesbare XML-Datei, die RDF-Daten enthält.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="fr">
+            Ce document est un fichier XML lisible par machine qui contient des données RDF.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="es">
+            Este es un documento XML legible por máquina que contiene datos RDF.
+        </rdfs:comment>
+        
+        <!-- Work Authors, Contributors & Publisher -->
+        <dcterms:creator rdf:resource="jnc:jos"/>
+        <dcterms:contributor rdf:resource="jnc:nbs"/>
+        <dcterms:publisher rdf:resource="jnc:janic"/>
+        
+        <!-- Document History -->
+        <dcterms:created rdf:datatype="W3CDTF">2023-09-21</dcterms:created>
+        <dcterms:issued rdf:datatype="W3CDTF">2023-09-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="W3CDTF">2024-04-26</dcterms:modified>
+        
+        <dcterms:hasVersion>2.0</dcterms:hasVersion>
+    
+    </rdf:Description>
+    
+    
+    <!-- LICENSE INFORMATION -->
+    <rdf:Description 
+        rdf:about="jip:license"
+        >
+        <dcterms:date rdf:datatype="W3CDTF">2015/</dcterms:date>
+        <!-- If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing. -->
+        
+        <dcterms:abstract xml:lang="en-US">
+            Copyright © 2015- <a href="https://www.thejanic.com/agents/janic-agents.xml#nbs">Nicole Christine Brende SCHMIDT</a> and <a href="https://www.thejanic.com/agents/janic-agents.xml#jos">Jan-Oliver SCHMIDT</a>. All rights reserved. 
+            This Work is protected by copyright and subject to licensing terms. Any alteration of this asset is strictly prohibited without prior written authorization from the copyright holders. Permission is granted for non-commercial use of this asset (to mean reproduction and distribution only) by any individual or organisation, provided that proper attribution (including the names of the <a href="https://www.thejanic.com/ip/janic-ip.xml#rights-holder">rights holders</a> and a <a href="https://www.thejanic.com/">link</a> to this asset) is clearly provided with each instance of use. Attribution may be done in a reasonable manner, but in no way that implies endorsement by the copyright holders. 
+            For further details, please refer to <a href="https://www.thejanic.com/ip/janic-ip.xml#license">www.thejanic.com/ip/janic-ip.xml#license</a>.
+        </dcterms:abstract>
+        
+        <!-- License Relationship -->
+        <dcterms:isPartOf rdf:resource="jnc:janic"/>
+        
+        <!-- License -->
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        
+        <!-- License Legal Code -->
+        <cc:legalcode xml:lang="en">http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en</cc:legalcode>
+        <cc:legalcode xml:lang="de">http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.de</cc:legalcode>
+        <cc:legalcode xml:lang="fr">http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.fr</cc:legalcode>
+        <cc:legalcode xml:lang="es">http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.es</cc:legalcode>
+        
+        <!-- License Permissions -->
+        <cc:permits rdf:resource="cc:Distribution"/>
+        <cc:permits rdf:resource="cc:Reproduction"/>
+        <cc:morePermissions/>
+        
+        <!-- License Prohibitions -->
+        <cc:prohibits rdf:resource="cc:CommercialUse"/>
+        <cc:prohibits rdf:resource="cc:DerivativeWorks"/>
+        
+        <!-- License Requirements -->
+        <cc:requires rdf:resource="cc:Attribution"/>
+        <cc:requires rdf:resource="cc:Notice"/>
+        
+        <!-- License Use Guidelines -->
+        <cc:useGuidelines/>
+        
+        <!-- License Juridication -->
+        <cc:jurisdiction xml:lang="en">international</cc:jurisdiction>
+        <cc:jurisdiction xml:lang="de">international</cc:jurisdiction>
+        <cc:jurisdiction xml:lang="fr">international</cc:jurisdiction>
+        <cc:jurisdiction xml:lang="es">internacional</cc:jurisdiction>
+        
+        <!-- Rights Holders -->
+        <dcterms:rightsHolder rdf:about="jip:rights-holder">
+            <rdf:Bag>
+                <rdf:li rdf:resource="jnc:jos">
+                    <rdf:label rdf:resource="jnc:jos-name"/>
+                </rdf:li>
+                <rdf:li rdf:resource="jnc:nbs">
+                    <rdf:label rdf:resource="jnc:nbs-name"/>
+                </rdf:li>
+            </rdf:Bag>
+        </dcterms:rightsHolder>
+        
+        <!-- Attribution Names -->
+        <cc:attributionName>
+            <rdf:Bag>
+                <rdf:li rdf:resource="jnc:jos-name"/>
+                <rdf:li rdf:resource="jnc:nbs-name"/>
+            </rdf:Bag>
+        </cc:attributionName>
+        
+        <!-- Attribution URL -->
+        <cc:attributionURL rdf:resource="jw3:"/>
+        
+    </rdf:Description>
+    
+    
+    <!-- JANIC LOGO -->
+    <cc:Work 
+        rdf:about="jip:janic-logo-2"
+        >
+        <!-- Work Relationship -->
+        <dcterms:isPartOf rdf:resource="jnc:janic"/>
+        
+        <!-- Work Location -->
+        <foaf:logo rdf:resource="jw3:ip/logos/janic-logo-2.svg"/>
+        
+        <!-- Work Identifier -->
+        <dcterms:identifier>janic-logo-v2.0</dcterms:identifier>
+        
+        <!-- Work File Type -->
+        <rdf:type rdf:resource="dcterms:IMT">text/svg+xml</rdf:type>
+        
+        <!-- Work File Title -->
+        <dcterms:title xml:lang="en" rdf:about="jip:janic-logo-2-title">
+            The JaNic Logotype
+            <dcterms:alternative xml:lang="en">The JaNic Logo</dcterms:alternative>
+            <dcterms:alternative xml:lang="en">The JaNic Wordmark</dcterms:alternative>
+            <dcterms:alternative xml:lang="en">The JaNic Word Mark</dcterms:alternative>
+            <dcterms:alternative xml:lang="en">The JaNic Graphic Mark</dcterms:alternative>
+            <dcterms:alternative xml:lang="en">The JaNic Emblem</dcterms:alternative>
+            
+            <dcterms:alternative xml:lang="de">Das JaNic-Logo</dcterms:alternative>
+            <dcterms:alternative xml:lang="de">Die JaNic-Wortmarke</dcterms:alternative>
+            <dcterms:alternative xml:lang="de">Das JaNic-Emblem</dcterms:alternative>
+            
+            <dcterms:alternative xml:lang="fr">Le Logo JaNic</dcterms:alternative>
+            <dcterms:alternative xml:lang="fr">Le Mot-Symbole JaNic</dcterms:alternative>
+            <dcterms:alternative xml:lang="fr">L'Emblème JaNic</dcterms:alternative>
+            
+            <dcterms:alternative xml:lang="es">El Logotipo de JaNic</dcterms:alternative>
+            <dcterms:alternative xml:lang="es">La Marca Denominativa JaNic</dcterms:alternative>
+            <dcterms:alternative xml:lang="es">El Emblema de JaNic</dcterms:alternative>
+        </dcterms:title>
+        
+        <!-- Work File Description -->
+        <dcterms:description rdf:about="jip:janic-logo-2-abstract">
+            <dcterms:abstract xml:lang="en">
+                The 'JaNic' logotype is a dual-tone visual emblem designed to aid and promote public identification and recognition of the "JaNic" portmanteau, a total morphotactic blending of the inital three letters from each of 'Jan-Oliver SCHMIDT' and 'Nicole Brende SCHMIDT.'
+                The logotype takes the form of a horizontally-oriented golden rectangle outlined in green. It is divided evenly down the middle: the left half showcases the white text 'JaN' against a green backdrop, while the right half presents the green text 'Nic' against a white background. 
+                The arrangement of these text blocks creates a dynamic interplay, with the diagonal stroke of the letter 'N' in 'Nic' directly adjacent to the left of its counterpart in 'JaN.' This interlocking of the two halves symbolises the strong and tight bond of the represented couple. 
+                To ensure aesthetic harmony, the height of the text within the logo adheres to the golden ratio. 
+                The vivid green hue, defined by the hex triplet #006600, encompasses a composition of 0% red, 40% green, and 0% blue, yielding a vibrant and distinctive visual signature.
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="de">
+                Das „JaNic“-Logo ist ein zweifarbiges visuelles Emblem, dass die öffentliche Identifizierung und Wiedererkennung des „JaNic“-Portmanteaus -- einer vollständigen morphotaktischen Mischung der drei Anfangsbuchstaben von „Jan-Oliver SCHMIDT“ und „Nicole Brende SCHMIDT“ -- unterstützen und fördern soll.
+                Das Logo hat die Form eines horizontal ausgerichteten goldenen Rechtecks mit grüner Umrandung. Es ist in der Mitte gleichmäßig aufgeteilt: Die linke Hälfte zeigt den weißen Text „JaN“ vor einem grünen Hintergrund, während die rechte Hälfte den grünen Text „Nic“ vor einem weißen Hintergrund präsentiert.
+                Durch die Anordnung dieser Textblöcke entsteht ein dynamisches Zusammenspiel, wobei der diagonale Strich des Buchstabens „N“ in „Nic“ direkt links neben seinem Gegenstück in „JaN“ liegt. Dieses Ineinandergreifen der beiden Hälften symbolisiert die starke und enge Bindung zwischen dem dargestellten Paar.
+                Um eine ästhetische Harmonie zu gewährleisten, richtet sich die Höhe des Textes innerhalb des Logos nach dem Goldenen Schnitt.
+                Der lebendige Grünton, definiert durch das Hex-Triplett #006600, umfasst eine Komposition aus 0 % Rot, 40 % Grün und 0 % Blau und ergibt eine lebendige und unverwechselbare visuelle Signatur.
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="fr">
+                Le logo « JaNic » est un emblème visuel bicolore conçu pour aider et promouvoir l'identification et la reconnaissance publique du portemanteau « JaNic », un mélange morphotactique total des trois lettres initiales de chacun de « Jan-Oliver SCHMIDT » et « Nicole Brende SCHMIDT ».
+                Le logotype prend la forme d'un rectangle doré orienté horizontalement et entouré de vert. Il est divisé uniformément au milieu : la moitié gauche présente le texte blanc « JaN » sur fond vert, tandis que la moitié droite présente le texte vert « Nic » sur fond blanc.
+                La disposition de ces blocs de texte crée une interaction dynamique, avec le trait diagonal de la lettre « N » dans « Nic » directement adjacent à la gauche de son homologue dans « JaN ». Cet emboîtement des deux moitiés symbolise le lien fort et étroit qui unit le couple représenté.
+                Pour garantir une harmonie esthétique, la hauteur du texte à l'intérieur du logo respecte le nombre d'or.
+                La teinte vert vif, définie par le triplet hexadécimal #006600, englobe une composition de 0 % de rouge, 40 % de vert et 0 % de bleu, produisant une signature visuelle vibrante et distinctive.
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="es">
+                El logotipo 'JaNic' es un emblema visual de dos tonos diseñado para ayudar y promover la identificación y el reconocimiento público del acrónimo "JaNic", una mezcla morfotáctica total de las tres letras iniciales de cada una de 'Jan-Oliver SCHMIDT' y 'Nicole Brende SCHMIDT'.
+                El logotipo tiene la forma de un rectángulo dorado orientado horizontalmente y delineado en verde. Está dividido uniformemente por la mitad: la mitad izquierda muestra el texto blanco 'JaN' sobre un fondo verde, mientras que la mitad derecha presenta el texto verde 'Nic' sobre un fondo blanco.
+                La disposición de estos bloques de texto crea una interacción dinámica, con el trazo diagonal de la letra 'N' en 'Nic' directamente adyacente a la izquierda de su contraparte en 'JaN'. Este entrelazamiento de las dos mitades simboliza el vínculo fuerte y estrecho de la pareja representada.
+                Para garantizar la armonía estética, la altura del texto dentro del logotipo se adhiere a la proporción áurea.
+                El tono verde vivo, definido por el triplete hexagonal #006600, abarca una composición de 0% rojo, 40% verde y 0% azul, lo que produce una firma visual vibrante y distintiva.
+            </dcterms:abstract>
+        </dcterms:description>
+        
+        <!-- Work File Subject -->
+        <dcterms:subject xml:lang="en">
+            The JaNic, JaNic, Jan-Oliver SCHMIDT, Nicole Brende SCHMIDT, logotype, logo, wordmark, word mark, graphic mark, emblem, brand, branding, portmanteau, portmanteau name, blend word, blend name
+        </dcterms:subject>
+        
+        <!-- Work Authors, Contributors & Publisher -->
+        <dcterms:creator rdf:resource="jnc:jos"/>
+        <dcterms:contributor rdf:resource="jnc:nbs"/>
+        <dcterms:publisher rdf:resource="jnc:janic"/>
+        
+        <!-- Work License -->
+        <cc:license rdf:resource="jip:license"/>
+        
+        <!-- Work Hash - MD5 -->
+        <dcterms:hasFormat>
+            <dcterms:format rdf:resource="https://www.wikidata.org/wiki/Q185235"/>
+            <rdfs:label>MD5</rdfs:label>
+            <dcterms:value>44c0b72f1f4b198dc982daa79a961a78</dcterms:value>
+        </dcterms:hasFormat>
+        
+        <!-- Work Hash - SHA-1 -->
+        <dcterms:hasFormat>
+            <dcterms:format rdf:resource="https://www.wikidata.org/wiki/Q110651361"/>
+            <rdfs:label>SHA-1</rdfs:label>
+            <dcterms:value>19d51a4186b6a5c0cad03820074916747ae152a5</dcterms:value>
+        </dcterms:hasFormat>
+            
+        <!-- Work Hash - SHA-256 -->
+        <dcterms:hasFormat>
+            <dcterms:format rdf:resource="https://www.wikidata.org/wiki/Q110651361"/>
+            <rdfs:label>SHA-256</rdfs:label>
+            <dcterms:value>99523cf97cf4fcc684bd1a130cb9a2371650204cf21e65f26c43e9d33254d305</dcterms:value>
+        </dcterms:hasFormat>
+        
+        <!-- Work Hash - SHA-512 -->
+        <dcterms:hasFormat>
+            <dcterms:format rdf:resource="https://www.wikidata.org/wiki/Q110651361"/>
+            <rdfs:label>SHA-512</rdfs:label>
+            <dcterms:value>d9646bb8a2e4a7b1c41fbfa7cb6ef9f8697a72465c56ac38490e9026b4372d45d626f68e2624a5db0f08eab2d97ea1b0bc85e55a245156af2128028a90598a1d</dcterms:value>
+        </dcterms:hasFormat>
+        
+        <!-- Work History -->
+        <dcterms:created rdf:datatype="W3CDTF">2015-04-21</dcterms:created>
+        <dcterms:issued rdf:datatype="W3CDTF">2015-04-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="W3CDTF">2023-04-26</dcterms:modified>
+        <dcterms:hasVersion>2.0</dcterms:hasVersion>
+    
+    </cc:Work>
+    
+    
+    <!-- JANIC WEBSITE -->
+    <cc:Work 
+        rdf:about="jip:janic-website"
+        >
+        <!-- Work Relationship -->
+        <dcterms:isPartOf rdf:resource="jnc:janic"/>
+        
+        <!-- Work Location -->
+        <foaf:homepage rdf:resource="jw3:"/>
+        
+        <!-- Work Identifier -->
+        <dcterms:identifier>janic-website</dcterms:identifier>
+        
+        <!-- Work File Type -->
+        <rdf:type rdf:resource="dcterms:IMT">text/html</rdf:type>
+        
+        <!-- Work Title -->
+        <dcterms:title xml:lang="en-US" rdf:about="jip:janic-website-title">
+            The Website of "The JaNic" Organization
+            <dcterms:alternative xml:lang="en-CA">The Website of "The JaNic" Organisation</dcterms:alternative>
+            <dcterms:alternative xml:lang="de">Die Website der Organisation „The JaNic“</dcterms:alternative>
+            <dcterms:alternative xml:lang="fr">Le site Internet de l'organisation « The JaNic »</dcterms:alternative>
+            <dcterms:alternative xml:lang="es">El sitio web de la organización "The JaNic"</dcterms:alternative>
+        </dcterms:title>
+        
+        <!-- Work Description -->
+        <dcterms:description rdf:about="jip:janic-website-abstract">
+            <dcterms:abstract xml:lang="en">
+            
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="de">
+            
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="fr">
+            
+            </dcterms:abstract>
+            <dcterms:abstract xml:lang="es">
+            
+            </dcterms:abstract>
+        </dcterms:description>
+        
+        <!-- Work Subject -->
+        <dcterms:subject xml:lang="en">
+            The JaNic, JaNic, Jan-Oliver SCHMIDT, Nicole Brende SCHMIDT
+        </dcterms:subject>
+        
+        <!-- Work Authors, Contributors & Publisher -->
+        <dcterms:creator rdf:resource="jnc:jos"/>
+        <dcterms:contributor rdf:resource="jnc:nbs"/>
+        <dcterms:publisher rdf:resource="jnc:janic"/>
+        
+        <!-- Work License -->
+        <cc:license rdf:resource="jip:license"/>
+        
+        <!-- Work History -->
+        <dcterms:created rdf:datatype="W3CDTF">2015-04-21</dcterms:created>
+        <dcterms:issued rdf:datatype="W3CDTF">2015-04-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="W3CDTF">2023-06-21</dcterms:modified>
+        <dcterms:hasVersion>1.1</dcterms:hasVersion>
+    
+    </cc:Work>
+
+
+</rdf:RDF>

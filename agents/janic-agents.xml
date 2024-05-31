@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- <?xml-stylesheet type="text/xsl" href="https://thejanic.com/styles/janic-style-1.xsl"?> -->
+
+<rdf:RDF    
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:org="https://www.w3.org/ns/org.n3"
+    xmlns:cc="http://creativecommons.org/ns#"
+    
+    xmlns:cv="http://rdfs.org/resume-rdf/cv.rdfs#"
+    xmlns:cv-val="http://rdfs.org/resume-rdf/base.rdfs#"
+    
+    xmlns:jnc="https://www.thejanic.com/agents/janic-agents.xml#"
+    xmlns:jip="https://www.thejanic.com/ip/"
+    xmlns:jw3="https://www.thejanic.com/"
+    >
+    
+    <!-- DOCUMENT METADATA -->
+    <rdf:Description 
+        rdf:about="jnc:"
+        >
+        <!-- Document Relationship -->
+        <dcterms:isPartOf rdf:resource="jnc:janic"/>
+        
+        <!-- Document File Type -->
+        <rdf:type rdf:Resource="dcterms:IMT">application/rdf+xml</rdf:type>
+        
+        <!-- Document Identifier -->
+        <dcterms:identifier>janic-agents-v2.0</dcterms:identifier>
+        
+        <!-- Document Title -->
+        <dcterms:title xml:lang="en">JaNic - Semantic Data</dcterms:title>
+        
+        <!-- Document Description -->
+        <dcterms:description xml:lang="en-US">
+            This online XML file conforms to the <a href="https://en.wikipedia.org/wiki/ Resource_Description_Framework">Resource Description Framework</a> (RDF) standard and serves as a repository of descriptions for "The JaNic" organization and its agents.
+        </dcterms:description>
+        <dcterms:description xml:lang="de">
+            Dieses Dokument ist eine über das Internet erreichbare XML-Datei mit Daten im Standard des <a href="https://de.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Frameworks</a> (RDF). Es enthält Beschreibungen der „JaNic“-Organisation und ihrer Agenten.
+        </dcterms:description>
+        <dcterms:description xml:lang="fr">
+            Ce document est un fichier XML en ligne contenant des données au standard de <a href="https://fr.wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework</a> (RDF). Il fournit des descriptions de l'organisation «The JaNic» et de ses agents.
+        </dcterms:description>
+        
+        <!-- Document Remarks -->
+        <rdfs:comment xml:lang="en">
+            This is a machine-readable XML document containing RDF data.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="de">
+            Dieses Dokument ist eine maschinenlesbare XML-Datei, die RDF-Daten enthält.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="fr">
+            Ce document est un fichier XML lisible par machine qui contient des données RDF.
+        </rdfs:comment>
+        
+        <!-- Work Authors, Contributors & Publisher -->
+        <dcterms:creator rdf:resource="jnc:jos"/>
+        <dcterms:contributor rdf:resource="jnc:nbs"/>
+        <dcterms:publisher rdf:resource="jnc:janic"/>
+        
+        <!-- Document History -->
+        <dcterms:created rdf:datatype="W3CDTF">2023-09-20</dcterms:created>
+        <dcterms:issued rdf:datatype="W3CDTF">2023-09-21</dcterms:issued>
+        <dcterms:modified rdf:datatype="W3CDTF">2024-04-26</dcterms:modified>
+        
+        <dcterms:hasVersion>2.0</dcterms:hasVersion>
+    
+    </rdf:Description>
+    
+    
+    <!-- THE JANIC ORGANIZATION -->
+    <rdf:Description 
+        rdf:type="foaf:Organization" 
+        rdf:about="jnc:janic" 
+        >
+        <!-- Names -->
+        <foaf:name>The JaNic</foaf:name>
+        <foaf:nick>JaNic</foaf:nick>
+        
+        <foaf:logo rdf:Resource="jw3:logos/janic-logo-2.svg"/>
+        
+        <!-- Agents -->
+        <dcterms:Agent>
+            <dcterms:comment>A resource that acts or has the power to act.</dcterms:comment>
+            <rdf:Bag>
+                <rdf:li rdf:resource="jnc:jos"/>
+                <rdf:li rdf:resource="jnc:nbs"/>
+            </rdf:Bag>
+        </dcterms:Agent>
+        
+        <!-- Rights Holder -->
+        <dcterms:rightsHolder rdf:resource="jip:rights-holder"/>
+        
+        <!-- Web Presence -->
+        <foaf:homepage rdf:Resource="jw3:"/>
+        <foaf:weblog/>
+        
+        <foaf:onlineAccount rdf:Resource="https://www.instagram.com/thejanic/">
+            <rdf:label xml:lang="en">The JaNic on Instagram</rdf:label>
+        </foaf:onlineAccount>
+        <foaf:onlineAccount rdf:Resource="https://www.facebook.com/thejanic/">
+            <rdf:label xml:lang="en">The JaNic on Facebook</rdf:label>
+        </foaf:onlineAccount>
+        <foaf:onlineAccount rdf:Resource="https://twitter.com/thejanic/">
+            <rdf:label xml:lang="en">The JaNic on X, formerly Twitter</rdf:label>
+        </foaf:onlineAccount>
+        
+        <!-- Location -->
+        <foaf:based_near rdf:Resource="https://www.wikidata.org/wiki/Q426435"/>
+        
+        <!-- Status -->
+        <foaf:status xml:lang="en"></foaf:status>
+        
+        <!-- Mailbox Hashes -->
+        <foaf:mbox_sha1sum>
+            <rdf:Bag>
+                <rdf:li>
+                    <rdf:value>25339c6f9c0e072272849bb12809db691655ef78</rdf:value>
+                    <rdf:comment>moc.ibx</rdf:comment>
+                </rdf:li>
+                <rdf:li>
+                    <rdf:value>915e6d12efd75aaf9057fc94b114d384b1a82c18</rdf:value>
+                    <rdf:comment>ten.ibx</rdf:comment>
+                </rdf:li>
+            </rdf:Bag>
+        </foaf:mbox_sha1sum>
+        
+        <!-- Tipjars -->
+        <foaf:tipjar rdf:nodeID="walletBitcoin"/>
+        <foaf:tipjar rdf:nodeID="walletUsdcSol"/>
+        
+        <!-- Primary Topic -->
+        <foaf:primaryTopic rdf:Resource="jnc:janic"/>
+    </rdf:Description>
+    
+    
+    <!-- JOS -->
+    <rdf:Description 
+        rdf:type="foaf:PersonalProfileDocument" 
+        rdf:about="jnc:jos"
+        >
+        
+        <foaf:Person>
+        
+            <foaf:mbox_sha1sum>
+                <rdf:Bag>
+                    <rdf:li>
+                        <rdf:value>1dfc76334358bc9c8c41b50067ad6dfb9f007e98</rdf:value>
+                        <rdf:comment>moc.+jos</rdf:comment>
+                    </rdf:li>
+                    <rdf:li>
+                        <rdf:value>5d30965e27db60864c079b09c91d2488616b7c73</rdf:value>
+                        <rdf:comment>ten.jos</rdf:comment>
+                    </rdf:li>
+                </rdf:Bag>
+            </foaf:mbox_sha1sum>
+                
+            <foaf:name rdf:about="jnc:jos-name">Jan-Oliver SCHMIDT</foaf:name>
+            <foaf:lastName xml:lang="de">Schmidt</foaf:lastName>
+            <foaf:givenName>
+                <rdf:Seq>
+                    <rdf:_1 xml:lang="de">Jan</rdf:_1>
+                    <rdf:_2 xml:lang="en">Oliver</rdf:_2>
+                </rdf:Seq>
+            </foaf:givenName>
+            
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q177053">
+                <rdf:Alt>
+                    <rdf:li xml:lang="en">Mister</rdf:li>
+                    <rdf:li xml:lang="en">Mr.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            <foaf:title rdf:Resource="https://de.wiktionary.org/wiki/Herr">
+                <rdf:Alt>
+                    <rdf:li xml:lang="de">Herr</rdf:li>
+                    <rdf:li xml:lang="de">Hr.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q1092777">
+                <rdf:Alt>
+                    <rdf:li xml:lang="fr">Monsieur</rdf:li>
+                    <rdf:li xml:lang="fr">M.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            
+            <foaf:nick>JOS</foaf:nick>
+            
+            <foaf:gender rdf:Resource="https://www.wikidata.org/wiki/Q6581097"/>
+            
+            <foaf:img rdf:Resource="jip:portraits/portrait-large-jos-1.jpg"/>
+            <foaf:thumbnail rdf:Resource="jip:portraits/portrait-small-jos-1.jpg"/>
+            <foaf:logo/>
+            
+            <foaf:based_near rdf:Resource="https://www.wikidata.org/wiki/Q426435"/>
+            <foaf:status></foaf:status>
+            
+            <foaf:knows rdf:Resource="jnc:nbs"/>
+            <foaf:knows rdf:Resource="jnc:tos"/>
+            
+            <foaf:workInfoHomepage/>
+            <foaf:weblog/>
+            
+            <foaf:onlineAccount rdf:Resource="https://www.linkedin.com/in/schmidtjano">
+                <rdf:label xml:lang="en">Jan-Oliver Schmidt on LinkedIn</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.xing.com/profile/JanOliver_Schmidt">
+                <rdf:label xml:lang="en">Jan-Oliver Schmidt on XING</rdf:label>
+            </foaf:onlineAccount>
+            
+            <!-- Tipjars -->
+            <foaf:tipjar rdf:nodeID="walletBitcoin">bitcoin:3J5JpgUVwzoTLQWxZz4iu89WZ4GtcbqKn6</foaf:tipjar>
+            <foaf:tipjar rdf:nodeID="walletUsdcSol">usdc:solana:GcEz7VNjMm9ntmonkASS5dEnejsxeFhspBHXD1cfkA9z</foaf:tipjar>
+        
+        </foaf:Person>
+        
+        <foaf:maker rdf:Resource="jnc:jos"/>
+        <foaf:primaryTopic rdf:Resource="jnc:jos"/>
+    
+    </rdf:Description> 
+    
+    
+    <!-- NBS -->
+    <rdf:Description 
+        rdf:type="foaf:PersonalProfileDocument" 
+        rdf:about="jnc:nbs"
+        >
+        <foaf:Person>
+            <foaf:mbox_sha1sum>
+                <rdf:Bag>
+                    <rdf:li>
+                        <rdf:value>ffd33ef1f8174b7e6da02eff89432656375bf110</rdf:value>
+                        <rdf:comment>moc.+nbs</rdf:comment>
+                    </rdf:li>
+                    <rdf:li>
+                        <rdf:value>47a26a6df6334cf4b07bb77cc9638d316eec9814</rdf:value>
+                        <rdf:comment>ten.nbs</rdf:comment>
+                    </rdf:li>
+                    <rdf:li>
+                        <rdf:value>acaeda49051f2e15cbc3eb51f6331cf9b8c7a748</rdf:value>
+                        <rdf:comment>@compass.com</rdf:comment>
+                    </rdf:li>
+                    <rdf:li>
+                        <rdf:value>ebf4dcf5eeab91814a86668dd27165c23fd5142f</rdf:value>
+                        <rdf:comment>@gmail.com</rdf:comment>
+                    </rdf:li>
+                </rdf:Bag>
+            </foaf:mbox_sha1sum>
+            
+            <foaf:name rdf:about="jnc:nbs-name">Nicole Christine Brende SCHMIDT</foaf:name>
+            <foaf:lastName xml:lang="de">Schmidt</foaf:lastName>
+            <foaf:givenName>
+                <rdf:Seq>
+                    <rdf:_1 xml:lang="en">Nicole</rdf:_1>
+                    <rdf:_2 xml:lang="en">Christine</rdf:_2>
+                    <rdf:_3 xml:lang="no">Brende</rdf:_3>
+                </rdf:Seq>
+            </foaf:givenName>
+            
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q313549"> 
+                <rdf:Alt>
+                    <rdf:li xml:lang="en">Mrs.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q1951543"> 
+                <rdf:Alt>
+                    <rdf:li xml:lang="en">Ms.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q16870890">
+                <rdf:Alt>
+                    <rdf:li xml:lang="de">Frau</rdf:li>
+                    <rdf:li xml:lang="de">Fr.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            
+            <foaf:nick>NBS</foaf:nick>
+            <foaf:nick xml:lang="en">Trende Brende</foaf:nick>
+            
+            <foaf:gender rdf:Resource="https://www.wikidata.org/wiki/Q6581072"/>
+            
+            <foaf:img rdf:Resource="jip:portraits/portrait-large-nbs-1.jpg"/>
+            <foaf:thumbnail rdf:Resource="jip:portraits/portrait-small-nbs-1.jpg.jpg"/>
+            <foaf:logo rdf:Resource="jip:logos/logo-nbs.jpg"/>
+            
+            <foaf:based_near rdf:Resource="https://www.wikidata.org/wiki/Q426435"/>
+            
+            <foaf:status xml:lang="en-US">Nicole is an acclaimed real estate expert with over a decade of experience in the high-end luxury market. As the daughter of a residential land developer, Nicole has a passion for new construction and enjoys working with builders to help buyers create their dream homes, from blueprints to the final product. With a keen eye for detail and a dedication to providing exceptional service, Nicole is renowned for offering her clients an unrivaled experience in the world of luxury residential real estate. 
+
+            As a leading expert in her field, Nicole understands that finding the perfect home in the right location is of utmost importance. She believes that a home is a place where one can truly personalize and make their own, and finding the right neighborhood is critical. With her unwavering commitment to providing tailored solutions to her clients' real estate needs, Nicole has established herself as one of the most sought-after agents in Houston. 
+
+            Nicole's dedication to her clients is evident in every aspect of her work, from her exceptional communication skills to her unparalleled marketing expertise. As a former TV news reporter and host of a residential TV show, she is able to use her multi-media marketing skills to her clients' advantage when listing their homes. She believes that “a home is the one place we get to personalize and make our very own and finding the right neighborhood matters.” As a certified relocation specialist, she is uniquely equipped to assist clients in navigating the fast-paced and ever-changing Houston real estate market. 
+
+            Her impressive list of accolades includes recognition as a rising star in the industry with the HAR-NRG 20 Under 40 Rising Stars in Real Estate Award, and she was named the 2014 Member of the Year by the Women's Council of Realtors, Houston Chapter. 
+
+            Nicole is an active member of her community and supports numerous charitable host committees. She remains engaged with her alma mater, Southern Methodist University, as well as Alpha Chi Omega sorority and the DAR Lady Washington Chapter. 
+
+            When she is not tirelessly working on behalf of her clients, Nicole enjoys spending quality time with her family, traveling, and attending cultural events such as the Houston Symphony and Theater Under the Stars. Her passion for creative projects extends beyond her professional life, and she delights in completing elegant home projects that reflect her exceptional taste and style. 
+
+            With her unwavering dedication to personalized service, unparalleled expertise, and impeccable professionalism, Nicole Brende is the ultimate choice for those seeking elegance and refinement in the luxury real estate market.
+            </foaf:status>
+            
+            <foaf:knows rdf:Resource="jnc:jos"/>
+            <foaf:knows rdf:Resource="jnc:tos"/>
+            
+            <foaf:workInfoHomepage rdf:Resource="http://www.nicolebrende.com"/>
+            <foaf:weblog rdf:Resource="http://www.trendebrende.com"/>
+            
+            <foaf:onlineAccount rdf:Resource="https://www.linkedin.com/in/nicole-brende-587384/">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on LinkedIn</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.facebook.com/NicoleBrendeRealtor/">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on Facebook</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.instagram.com/nicolebrende/">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on Instagram</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://twitter.com/NicoleBrende/">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on X (formerly Twitter)</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.threads.net/@nicolebrende">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on Threads</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.compass.com/agents/nicole-brende/">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® at Compass</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.har.com/nicole-brende/agent_nbrende">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on HAR.com</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://www.realtor.com/realestateagents/568149d589a68901006b232d">
+                <rdf:label xml:lang="en">Nicole Brende, Texas Luxury REALTOR® on Realtor.com</rdf:label>
+            </foaf:onlineAccount>
+            <foaf:onlineAccount rdf:Resource="https://houston.culturemap.com/news/real-estate/06-24-19-martha-turner-sothebys-international-realty-realtor-profile-nicole-brende/">
+                <rdf:label xml:lang="en">Nicole Brende: Talented REALTOR® brings array of skills to Houston buyers and sellers (CultureMap Houston)</rdf:label>
+            </foaf:onlineAccount>
+            
+            <foaf:tipjar rdf:nodeID="walletBitcoin"/>
+            <foaf:tipjar rdf:nodeID="walletUsdcSol"/>
+        
+        </foaf:Person>
+        
+        <foaf:maker rdf:Resource="jnc:nbs"/>
+        <foaf:primaryTopic rdf:Resource="jnc:nbs"/>
+    
+    </rdf:Description> 
+    
+    
+    <!-- TOS -->
+    <rdf:Description 
+        rdf:type="foaf:PersonalProfileDocument" 
+        rdf:about="jnc:tos"
+        >
+        <foaf:Person>
+        
+            <foaf:mbox_sha1sum>
+                <rdf:Bag>
+                    <rdf:li>
+                        <rdf:value>4d3aa07239e2770a504dbf8cd70cd8a0e101e073</rdf:value>
+                        <rdf:comment>moc.+tos</rdf:comment>
+                    </rdf:li>
+                    <rdf:li>
+                        <rdf:value>c29bd30cbe3ef07fe1c7af109d90263777080dc1</rdf:value>
+                        <rdf:comment>ten.tos</rdf:comment>
+                    </rdf:li>
+                </rdf:Bag>
+            </foaf:mbox_sha1sum>
+            
+            <foaf:name rdf:about="jnc:tos-name">Thor-Olav Oliver SCHMIDT</foaf:name>
+            <foaf:lastName xml:lang="de">Schmidt</foaf:lastName>
+            <foaf:givenName>
+                <rdf:Seq>
+                    <rdf:_1>
+                        <rdf:Bag>
+                            <rdf:li xml:lang="no">Thor-</rdf:li>
+                            <rdf:li xml:lang="de">Olav</rdf:li>
+                        </rdf:Bag>
+                    </rdf:_1>
+                    <rdf:_2 xml:lang="en">Oliver</rdf:_2>
+                </rdf:Seq>
+            </foaf:givenName>
+            
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q6784979">
+                <rdf:Alt>
+                    <rdf:li xml:lang="en">Master</rdf:li>
+                    <rdf:li xml:lang="en">Mstr.</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            <foaf:title rdf:Resource="https://www.wikidata.org/wiki/Q6784979">
+                <rdf:Alt>
+                    <rdf:li xml:lang="de">Junker</rdf:li>
+                </rdf:Alt>
+            </foaf:title>
+            
+            <foaf:gender rdf:Resource="https://www.wikidata.org/wiki/Q6581072"/>
+            
+            <foaf:nick>TOS</foaf:nick>
+            
+            <foaf:img rdf:Resource="jip:portraits/portrait-large-tos-1.jpg"/>
+            <foaf:thumbnail rdf:Resource="jip:portraits/portrait-small-tos-1.jpg"/>
+            <foaf:logo rdf:Resource="nil"/>
+            
+            <foaf:based_near rdf:Resource="https://www.wikidata.org/wiki/Q426435"/>
+            <foaf:status/>
+            
+            <foaf:knows rdf:Resource="jnc:jos"/>
+            <foaf:knows rdf:Resource="jnc:nbs"/>
+            
+            <foaf:workInfoHomepage/>
+            <foaf:weblog/>
+            
+            <foaf:onlineAccount rdf:Resource="https://www.instagram.com/tos_theboss/">
+                <rdf:label xml:lang="en">Thor-Olav Schmidt on Instagram</rdf:label>
+            </foaf:onlineAccount>
+            
+            <!-- Tipjars -->
+            <foaf:tipjar rdf:nodeID="walletBitcoin"/>
+            <foaf:tipjar rdf:nodeID="walletUsdcSol"/>
+        
+        </foaf:Person>
+        
+        <foaf:maker rdf:Resource="jnc:jos"/>
+        <foaf:primaryTopic rdf:Resource="jnc:tos"/>
+        
+    </rdf:Description>
+
+</rdf:RDF>
